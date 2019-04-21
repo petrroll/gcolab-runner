@@ -19,4 +19,7 @@
 ### TODO: 
 - Change current tensorboard from utils to [tensorboardcolab](https://medium.com/looka-engineering/how-to-use-tensorboard-with-pytorch-in-google-colab-1f76a938bc34)
 - Change current GDrive mounting from some weird custom solution to Google's [drive.mount()](https://colab.research.google.com/notebooks/io.ipynb)
-
+- Explore using TPUs: [Google docu](https://colab.research.google.com/notebooks/tpu.ipynb), [Some medium post](https://medium.com/looka-engineering/how-to-use-tensorboard-with-pytorch-in-google-colab-1f76a938bc34), ...
+- Support for cloning data from git instead of having to upload them to gdrive 
+  - Separate folders for static data (script, training data) on local fs & produced data (model checkpoints, logs) in mounted gdrive folder. 
+  - Caching data on local FS locally for ?potentially? better I/O.
